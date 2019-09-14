@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  jupyter-notebook-playground:
+    build: ./playground
+    image: claclacla/jupiter-notebook-playground
+    container_name: JupiterNotebookPlayground
+    ports:
+      - "8888:8888"
+    volumes:
+      - "${APP_FOLDER}:/usr/src/app"
